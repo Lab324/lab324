@@ -1,0 +1,40 @@
+.loginbg{
+	border: 1px solid;
+	text-align: center;
+	width: 500px;
+	background-image: url("../images/bgi.jpg");
+	border-radius: 15px;
+	margin:0 auto;
+	margin-top: 10%;
+	/*display: none;*/
+}
+.loginbg1{
+	text-align: center;
+}
+h1{
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+}
+body form #tx1,#tx2,#uname,#pwd{
+	border: 1px solid #a8a8a8;
+	width: 31.65%;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 24px 24px 0;
+    /*position: relative;*/
+}
+body form input[type="submit"]{
+	outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 9px 32px;
+    background: #fc3a3a;
+}
+body form input[type="submit"]:hover{
+	background:#05969b;
+	cursor: pointer;
+}
