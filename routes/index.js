@@ -17,7 +17,7 @@ router.get('/info', function(req, res, next) {
 
 router.get('/login', function(req, res, next) {
   UserInfo.find(function (err, result) {
-    res.render('login', {
+      res.render('login', {
       title: 'Expaaress' ,
       obj:result
     });
@@ -44,7 +44,7 @@ router.get('/task', function(req, res, next) {
 router.get('/taskDetail', function(req, res, next) {
   res.render('taskDetail', { title: 'Express' });
 });
-//ÒÔÏÂÊÇÄ£°å¶îÍâÂ·ÓÉ£¬È·¶¨ºÃ½çÃæºó¿ÉÉ¾³ý
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½É£ï¿½È·ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
 router.get('/services', function(req, res, next) {
   res.render('services', { title: 'services' });
 });
