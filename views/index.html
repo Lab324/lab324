@@ -15,6 +15,7 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---->
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 <body>
  <div class="header">
@@ -337,9 +338,8 @@
 	 <div class="container">
 		 <p class="footer_header">联系我们</p>
 		 <div class="map">
-		 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 		 <!--百度地图容器-->
-		 <div style="width:697px;height:550px;border:#ccc solid 1px;margin-left: 0px;margin-top: 3px"  id="dituContent"></div>
+		 <div style="width:60%;height:300px;border:#ccc solid 1px;margin-left: 0px;margin-top: 3px"  id="dituContent"></div>
 		 <script type="text/javascript">
 			 //创建和初始化地图函数：
 			 function initMap(){
@@ -376,8 +376,6 @@
 				 var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
 				 map.addControl(ctrl_sca);
 			 }
-
-
 			 initMap();//创建和初始化地图
 		 </script>
 		 </div>
@@ -410,7 +408,8 @@
 	          <div class="clearfix"> </div>
            </div>
 		 </div>
-	 </div>
+ </div>
 <!--footer-->
+
 </body>
 </html>

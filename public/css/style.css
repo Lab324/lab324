@@ -828,8 +828,8 @@ background:#E8E8E8;
 	display:block;
 }
 .contact-grids{
-	margin:5em 0 0;
-    margin-top: -500px;
+	margin:1em 0 0;
+    margin-top: -300px;
 }
 .contact-form1 h4,.contact-me h4{
 	font-size:1em;
@@ -886,7 +886,7 @@ background:#E8E8E8;
 	padding:0;
 }
 .con-grid{
-	padding:5.7em 3em;
+	padding:1em 1em;
 	background:#B7112A;
 }
 /*-- //contact --*/
@@ -2396,4 +2396,9 @@ div#bs-example-navbar-collapse-1 {
     height:550px;
     border:#ccc solid 1px;
 }
+}
+.footer_header{
+    font-size: 2em;
+    color: white;
+    margin-top: -50px;
 }
