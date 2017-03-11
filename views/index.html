@@ -109,7 +109,7 @@
 					<h2>实验室</h2><br>
 					<p>Welcome to join us </p>
 				</div>
-				<p class="banner-text1">这里有多年工作经验的导师，有身经百战的师哥师姐，带你进入代码的缤纷世界!</p>
+				<p class="banner-text1">这里有多年工作经验的导师，有身经百战的师哥师姐，带你进入代码的世界!</p>
 			</div>
 		</div>
 
@@ -333,45 +333,84 @@
 </div>
 <!---->
 <!--footer-->
-<div class="footer">
-	<div class="container">
-		<div class="col-md-6 footer-left">
-			<div class="contact-grids">
-				<div class="col-md-8 map">
-					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473478.1088362797!2d-107.97470132744915!3d52.74110675936634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6bf47ed992b%3A0x05049e3295772690!2sSaskatoon%2C+SK%2C+Canada!5e0!3m2!1sen!2sin!4v1460541578241"  allowfullscreen></iframe>-->
-				</div>
-				<div class="col-md-4 con-grid">
-					<div class="contact-grid1">
-						<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
-						<div class="con-ic">
-							<p>济南长清湖校区<span>山东师范大学</span></p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="contact-grid contact-grid1">
-						<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
-						<div class="con-ic">
-							<p>+17864180457<span>+17864180461</span></p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="contact-grid1">
-						<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
-						<div class="con-ic">
-							<p><a href="mailto:info@example.com">1963246652@qq.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
+ <div class="footer">
+	 <div class="container">
+		 <p class="footer_header">联系我们</p>
+		 <div class="map">
+		 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+		 <!--百度地图容器-->
+		 <div style="width:697px;height:550px;border:#ccc solid 1px;margin-left: 0px;margin-top: 3px"  id="dituContent"></div>
+		 <script type="text/javascript">
+			 //创建和初始化地图函数：
+			 function initMap(){
+				 createMap();//创建地图
+				 setMapEvent();//设置地图事件
+				 addMapControl();//向地图添加控件
+			 }
 
-			<div>
-		<div class="clearfix"></div>
-	</div>
-</div>
- <!--//footer-->
-			</div>
-		</div>
-	</div>
+			 //创建地图函数：
+			 function createMap(){
+				 var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+				 var point = new BMap.Point(116.838792,36.552587);//定义一个中心点坐标
+				 map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+				 window.map = map;//将map变量存储在全局
+			 }
+
+			 //地图事件设置函数：
+			 function setMapEvent(){
+				 map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+				 map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+				 map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+				 map.enableKeyboard();//启用键盘上下左右键移动地图
+			 }
+
+			 //地图控件添加函数：
+			 function addMapControl(){
+				 //向地图中添加缩放控件
+				 var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+				 map.addControl(ctrl_nav);
+				 //向地图中添加缩略图控件
+				 var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+				 map.addControl(ctrl_ove);
+				 //向地图中添加比例尺控件
+				 var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+				 map.addControl(ctrl_sca);
+			 }
+
+
+			 initMap();//创建和初始化地图
+		 </script>
+		 </div>
+          <div class="contact-grids">
+	        <div class="col-md-8 map">
+	        </div>
+	      <div class="col-md-4 con-grid">
+		    <div class="contact-grid1">
+			   <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+			 <div class="con-ic">
+				 <p>山东师范大学 <span>长清湖校区</span></p>
+			 </div>
+			 <div class="clearfix"> </div>
+		    </div>
+		  <div class="contact-grid contact-grid1">
+			   <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+			     <div class="con-ic">
+				   <p>+17864180457<span>+17864180461</span></p>
+			      </div>
+			 <div class="clearfix"> </div>
+		   </div>
+		 <div class="contact-grid1">
+			 <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+			   <div class="con-ic">
+				 <p><a href="mailto:info@example.com">1963246652@qq.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+			    </div>
+			 <div class="clearfix"> </div>
+		      </div>
+		  </div>
+	          <div class="clearfix"> </div>
+           </div>
+		 </div>
+	 </div>
+<!--footer-->
 </body>
 </html>
