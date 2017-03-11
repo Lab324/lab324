@@ -70,6 +70,7 @@ ul.nav-login li a:hover {
 }
 .head-top{
 	margin-top:1em;
+    margin-left: 20px;
 }
 /*----*/
 .social-ic{
@@ -125,9 +126,10 @@ ul.nav-login li a:hover {
 }
 /*----*/
 .nav-top{
-	position:absolute;
+	background-color: #03a9f4;
 	bottom:0;
 	width: 100%;
+    margin-left: 30px;
 }
 .nav1{
     background:#00959f;
@@ -147,10 +149,14 @@ ul.nav-login li a:hover {
 	padding: 0.8em 1.2em;
 	 margin: 0 0.3em;
 }
+ #nav-fold{
+     margin-left: 20px;
+ }
 
 /* Effect 8: border slight translate */
 .cl-effect-8 a {
 	padding: 10px 20px;
+    margin-left: 20px;
 }
 
 .cl-effect-8 a::before,
@@ -307,10 +313,16 @@ transition: 0.5s all;
 	margin-top: 14em;
 	position:relative;
 }
-.banner-text h2{
+.banner-text h4{
 	font-family: 'Montserrat', sans-serif;
-	font-size:5em;
+	font-size:3em;
 	color:#fff;
+}
+.banner-text h2{
+    font-family: Arial;
+    font-size: 5em;
+    color: #fff;
+
 }
 .banner-text p{
 	letter-spacing:2px;
@@ -1691,6 +1703,7 @@ div#bs-example-navbar-collapse-1 {
     position: absolute;
     width: 87%;
     z-index: 999;
+    margin-left: 3px;
 }
 ul.nav.navbar-right {
     text-align: center;
@@ -1717,7 +1730,7 @@ ul.nav.navbar-right {
 }
 div#bs-example-navbar-collapse-1 {
     width: 95.2%;
-    margin-top: 1.7em;
+    margin-top: 1.9em;
 }
 .header {
     min-height: 500px;
@@ -2236,7 +2249,7 @@ ul.con-icons li {
 }
 div#bs-example-navbar-collapse-1 {
     width: 90.2%;
-    margin-top: 1em;
+    margin-top: 1.9em;
 }
 .navbar-nav > li > a {
     font-size: 1em;

@@ -18,18 +18,28 @@
 </head>
 <body>
  <div class="header">
-	<div class="container">
+	<div class="container" id="nav-fold">
 		<div class="head-top">
-			<div class="logo">
-				<a href="index.html"><img src="../images/bo.png" alt="" title="Academic"></a>
-			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="nav-top">
+				<ul class="nav navbar-nav cl-effect-8">
+					<li ><a class="active" href="index.html">首页 </a></li>
+					<li><a href="about">实战</a></li>
+					<li><a href="gallery">新闻</a></li>
+					<li><a href="typo">关于我们</a></li>
+					<li><a href="contact">联系我们</a></li>
+					<li><a href="mission">任务</a></li>
+					<div class="clearfix"> </div>
+				</ul>
+			</div><!-- /.navbar-collapse -->
 			<div class="login">
 				<ul class="nav-login">
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">Login</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">Signup</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal1">登录</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal2">注册</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
+				</div>
 		</div>
 	</div>
 		<!-- login -->
@@ -95,36 +105,18 @@
 		<div class="banner">
 			<div class="container">
 				<div class="banner-text">
-					<h2>Academic</h2>
-					<p>Sed ut perspiciatis unde </p>
+					<h4>计算机辅助设计与视觉计算</h4><br>
+					<h2>实验室</h2><br>
+					<p>Welcome to join us </p>
 				</div>
-				<p class="banner-text1">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system</p>
+				<p class="banner-text1">这里有多年工作经验的导师，有身经百战的师哥师姐，带你进入代码的缤纷世界!</p>
 			</div>
 		</div>
-		<div class="nav-top">
-			<div class="container">
-				<div class="nav1">
-					<div class="navbar1">
-					<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" >
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-		 
+
+
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav cl-effect-8">
-								<li ><a class="active" href="index.html">首页 </a></li>
-								<li><a href="about">实战</a></li>
-								<li><a href="gallery">新闻</a></li>
-								<li><a href="typo">关于我们</a></li>
-								<li><a href="contact">联系我们</a></li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
+
 					</div>
 					<!-- start search-->
 					<ul class="social-ic">
@@ -134,9 +126,9 @@
 						<li><a href="#"><i class="ic2"></i></a></li>
 					</ul>
 					<div class="clearfix"></div>
-				</div> 
-			</div> 
-		</div> 
+				</div>
+			</div>
+		</div>
 </div> 
 
 	<div class="content">
@@ -274,8 +266,7 @@
 					</div>
 					<div class="clearfix"></div>
 				</div>
-				
-			<div class="clearfix"> </div>
+				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
@@ -345,26 +336,36 @@
 <div class="footer">
 	<div class="container">
 		<div class="col-md-6 footer-left">
-			<h3>Information</h3>
-			<p class="para">At vero eos et accusamus et iusto odio dignissimos
-			ducimus qui blanditiis praesentium voluptatum deleniti at
-			que corrupti quos dolores et quas molestias excepturi sint
-			occaecati cupiditate non provident, similique sunt.</p>
-			<h3>Newsletter<label></label></h3>
-			<form action="#" method="post">
-				<input type="text" value="Name" name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-				<input type="email" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-				<input type="submit" value="Submit">
-			</form>
-		</div>
-		<div class="col-md-6 footer-right">
-			<h3>Contact Us</h3>
-			<ul class="con-icons">
-				<li><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>+123 456 7890</li>
-				<li><a href="mailto:info@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>info@example.com</a></li>
-			</ul>
-			<p class="copy-right">© 2016 Academic. All rights reserved | Design by <a href="http://xmoban.cn/">xmoban.cn</a></p>
-		</div>
+			<div class="contact-grids">
+				<div class="col-md-8 map">
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473478.1088362797!2d-107.97470132744915!3d52.74110675936634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6bf47ed992b%3A0x05049e3295772690!2sSaskatoon%2C+SK%2C+Canada!5e0!3m2!1sen!2sin!4v1460541578241"  allowfullscreen></iframe>-->
+				</div>
+				<div class="col-md-4 con-grid">
+					<div class="contact-grid1">
+						<i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+						<div class="con-ic">
+							<p>12K Street, 45 Building Road <span>Canada.</span></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="contact-grid contact-grid1">
+						<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+						<div class="con-ic">
+							<p>+1234 758 839<span>+1273 748 730</span></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="contact-grid1">
+						<i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+						<div class="con-ic">
+							<p><a href="mailto:info@example.com">info@example1.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+
+			<div>
 		<div class="clearfix"></div>
 	</div>
 </div>
