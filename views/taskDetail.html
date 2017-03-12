@@ -1,10 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>实验室用户网站</title>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!---->
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 <body>
+<div class="header">
+    <div class="container" id="nav-fold">
+        <div class="head-top">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <div class="nav-top">
+                    <ul class="nav navbar-nav cl-effect-8">
+                        <li ><a class="active" href="index.html">首页 </a></li>
+                        <li><a href="about">实战</a></li>
+                        <li><a href="gallery">新闻</a></li>
+                        <li><a href="typo">关于我们</a></li>
+                        <li><a href="contact">联系我们</a></li>
+                        <li><a href="mission">任务</a></li>
+                        <div class="clearfix"> </div>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+                <div class="login">
+                    <ul class="nav-login">
+                        <li><a href="#" data-toggle="modal" data-target="#myModal1">登录</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#myModal2">注册</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- login -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="login-grids">
+
+                        <div class="login-right">
+                            <form action="#" method="post">
+                                <h3>Signin with your account </h3>
+                                <input type="text" value="Enter your mobile number or Email" name=" Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">
+                                <input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+                                <h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
+                                <div class="single-bottom">
+                                    <input type="checkbox"  id="brand" value="">
+                                    <label for="brand"><span></span>Remember Me.</label>
+                                </div>
+                                <input type="submit" value="SIGNIN" >
+                            </form>
+                        </div>
+
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //login -->
+    <!-- signup -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-info">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body modal-spa">
+                    <div class="login-grids">
+
+                        <div class="login-right">
+                            <form action="#" method="post">
+                                <h3>Create your account </h3>
+                                <input type="text" value="Name" name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+                                <input type="text" value="Mobile number" name="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
+                                <input type="text" value="Email id" name="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">
+                                <input type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+
+                                <input type="submit" value="CREATE ACCOUNT" >
+                            </form>
+                        </div>
+
+                        <p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup -->
+    <div class="banner">
+        <div class="container">
+            <div class="banner-text">
+                <h4>计算机辅助设计与视觉计算</h4><br>
+                <h2>实验室</h2><br>
+                <p>Welcome to join us </p>
+            </div>
+            <p class="banner-text1">这里有多年工作经验的导师，有身经百战的师哥师姐，带你进入代码的世界!</p>
+        </div>
+    </div>
+
+
+</div>
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+</div>
+<!-- start search-->
+<ul class="social-ic">
+    <li><a href="#"><i></i></a></li>
+    <li><a href="#"><i class="ic"></i></a></li>
+    <li><a href="#"><i class="ic1"></i></a></li>
+    <li><a href="#"><i class="ic2"></i></a></li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="content">
+    <div class="container">
+
+        <div class="content-mid">
+            <div class="col-md-4 content-top1">
+                <div class=" content-top2">
+                    <h4>Design Thinking</h4>
+                    <h6> There are many variations</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+            </div>
+            <div class="col-md-4 content-top1">
+                <div class=" content-top2">
+                    <h4>Book Library </h4>
+                    <h6> There are many variations</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+            </div>
+            <div class="col-md-4 content-mid-1">
+                <div class="port effect-1">
+                    <div class="image-box">
+                        <img src="../images/a1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="text-desc text-ed">
+                        <h6>Education</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!---->
+<div class="services">
+    <div class="container">
+        <div class="service-head">
+            <h3>Services</h3>
+            <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+        <div class="servies-top">
+            <div class="col-md-7 us-ser">
+                <div class=" why-choose">
+                    <div class=" hi-icon-effect-2 hi-icon-effect-2a">
+                        <a href="#set-6" class="hi-icon  glyphicon glyphicon-book"></a>
+                    </div>
+                    <div class="ser-top ">
+                        <h5>Our Values</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class=" why-choose">
+                    <div class=" hi-icon-effect-2 hi-icon-effect-2a">
+                        <a href="#set-6" class="hi-icon  glyphicon glyphicon-leaf"></a>
+                    </div>
+                    <div class="ser-top">
+                        <h5>Our Strategy</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class=" why-choose">
+                    <div class=" hi-icon-effect-2 hi-icon-effect-2a">
+                        <a href="#set-6" class="hi-icon  glyphicon glyphicon-pencil"></a>
+                    </div>
+                    <div class="ser-top">
+                        <h5>Our Mission</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+
+            </div>
+            <div class="col-md-5 service-mid">
+                <img src="../images/co.png" alt="" class="img-responsive">
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<div class="test">
+    <div class="container">
+        <h3>Testimonials</h3>
+        <div  class=" test-grid-1" >
+            <div class="col-md-6 test-wrapper">
+                <img src="../images/te.jpg" alt="" class="img-responsive">
+                <div class="test-grid">
+                    <div class="test-gr">
+                        <h4>Andery</h4>
+                        <span>Ceo</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 test-wrapper">
+                <img src="../images/te1.jpg" alt="" class="img-responsive">
+                <div class="test-grid">
+                    <div class="test-gr">
+                        <h4>Hailey</h4>
+                        <span>Principal </span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"> </div>
+        </div>
+        <div  class=" test-grid-2" >
+            <div class="col-md-6 test-wrapper">
+                <img src="../images/te2.jpg" alt="" class="img-responsive">
+                <div class="test-grid">
+                    <div class="test-gr">
+                        <h4>Quincy</h4>
+                        <span>Manager</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-md-6 test-wrapper">
+                <img src="../images/te3.jpg" alt="" class="img-responsive">
+                <div class="test-grid">
+                    <div class="test-gr">
+                        <h4>Barb</h4>
+                        <span>professor</span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<!---->
+<div class="content-bottom">
+    <h1>Gallery</h1>
+    <div class="content-in">
+        <div class="port effect-1">
+            <div class="image-box">
+                <img src="../images/fi.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="text-desc">
+                <h6>Education</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-in">
+        <div class="port effect-1">
+            <div class="image-box">
+                <img src="../images/fi1.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="text-desc">
+                <h6>Education</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-in">
+        <div class="port effect-1">
+            <div class="image-box">
+                <img src="../images/fi3.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="text-desc">
+                <h6>Education</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-in">
+        <div class="port effect-1">
+            <div class="image-box">
+                <img src="../images/fi2.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="text-desc">
+                <h6>Education</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-in">
+        <div class="port effect-1">
+            <div class="image-box">
+                <img src="../images/fi4.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="text-desc">
+                <h6>Education</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!---->
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <p class="footer_header">联系我们</p>
+        <div class="map">
+            <!--百度地图容器-->
+            <div style="width:60%;height:300px;border:#ccc solid 1px;margin-left: 0px;margin-top: 3px"  id="dituContent"></div>
+            <script type="text/javascript">
+                //创建和初始化地图函数：
+                function initMap(){
+                    createMap();//创建地图
+                    setMapEvent();//设置地图事件
+                    addMapControl();//向地图添加控件
+                }
+
+                //创建地图函数：
+                function createMap(){
+                    var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+                    var point = new BMap.Point(116.838792,36.552587);//定义一个中心点坐标
+                    map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+                    window.map = map;//将map变量存储在全局
+                }
+
+                //地图事件设置函数：
+                function setMapEvent(){
+                    map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+                    map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+                    map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+                    map.enableKeyboard();//启用键盘上下左右键移动地图
+                }
+
+                //地图控件添加函数：
+                function addMapControl(){
+                    //向地图中添加缩放控件
+                    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                    map.addControl(ctrl_nav);
+                    //向地图中添加缩略图控件
+                    var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+                    map.addControl(ctrl_ove);
+                    //向地图中添加比例尺控件
+                    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                    map.addControl(ctrl_sca);
+                }
+                initMap();//创建和初始化地图
+            </script>
+        </div>
+        <div class="contact-grids">
+            <div class="col-md-8 map">
+            </div>
+            <div class="col-md-4 con-grid">
+                <div class="contact-grid1">
+                    <i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>
+                    <div class="con-ic">
+                        <p>山东师范大学 <span>长清湖校区</span></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="contact-grid contact-grid1">
+                    <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                    <div class="con-ic">
+                        <p>+17864180457<span>+17864180461</span></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="contact-grid1">
+                    <i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>
+                    <div class="con-ic">
+                        <p><a href="mailto:info@example.com">1963246652@qq.com</a><span><a href="mailto:info@example.com">info@example2.com</a></span></p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
 
 </body>
 </html>
