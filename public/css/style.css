@@ -194,7 +194,7 @@ ul.nav-login li a:hover {
 
 .cl-effect-8 a::after {
 	border-color: #fff;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transform: translateY(-7px) translateX(6px);
 	-moz-transform: translateY(-7px) translateX(6px);
 	transform: translateY(-7px) translateX(6px);
@@ -202,7 +202,7 @@ ul.nav-login li a:hover {
 
 .cl-effect-8 a:hover::before,
 .cl-effect-8 a:focus::before {
-	opacity: 0;
+	opacity: 1;
 	-webkit-transform: translateY(5px) translateX(-5px);
 	-moz-transform: translateY(5px) translateX(-5px);
 	transform: translateY(5px) translateX(-5px);

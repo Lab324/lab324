@@ -2520,7 +2520,7 @@ img.aligncenter {
 }
 
 .progress-bullets.ace-animate .bullet {
-    opacity: 0;
+    opacity: 1;
 }
 
 .progress-bullets.ace-animated .bullet {
