@@ -1502,7 +1502,9 @@ submit
 .clearfix:after {
     clear: both;
 }
-
+.intro{
+    color: #337ab7;
+}
 .clear-mrg > *:last-child {
     margin-bottom: 0 !important;
 }
