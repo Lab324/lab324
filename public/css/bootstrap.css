@@ -6294,6 +6294,13 @@ button.close {
     bottom: 20px;
   }
 }
+.row-task{
+  display: table;
+  content: " ";
+  clear: both;
+  text-transform:lowercase;
+
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
