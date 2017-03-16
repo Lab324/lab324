@@ -1505,6 +1505,11 @@ submit
 .intro{
     color: #337ab7;
 }
+.intro2{
+    color: #337ab7;
+    text-align:center
+
+}
 .clear-mrg > *:last-child {
     margin-bottom: 0 !important;
 }
@@ -4789,8 +4794,27 @@ h1, h2, h3, h4, h5, h6 {
  */
 .ace-wrapper {
     top:50px;
+
     overflow: hidden;
     position: relative;
+}
+.ace-wrapper-table {
+   padding-top: 50px;
+    padding-left: 50px;
+    overflow: hidden;
+    position: relative;
+}
+.task-task{
+    font-family: sans-serif;
+    color: #0d0d0d;
+}
+.task-task3 {
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    color: #0d0d0d;
+}
+.task-task2{
+    color: blue;
+    font-size: small;
 }
 
 .ace-container {
@@ -4823,7 +4847,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .ace-container {
-        padding-left: 0;
+        padding-left: 0px;
         padding-right: 0;
     }
 
@@ -5465,6 +5489,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, -webkit-transform 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
     box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
+
 
 .ace-sidebar-opened #ace-sidebar {
     -webkit-transform: translate(0, 0);
