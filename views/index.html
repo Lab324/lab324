@@ -16,6 +16,25 @@
 <!---->
 <script src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+	<script src="../js/jquery-1.4.4.min.js"></script>
+	<script src="../js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: '../images/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+			});
+		});
+	</script>
+	<link href="../css/news/news_style.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
  <div class="header">
@@ -25,8 +44,8 @@
 				<div class="nav-top">
 				<ul class="nav navbar-nav cl-effect-8" id="ul-po">
 					<li><a href="index.html">首页 </a></li>
-					<li><a href="about">实战</a></li>
-					<li><a href="gallery">新闻</a></li>
+					<li><a href="about">新闻</a></li>
+					<li><a href="gallery">实战</a></li>
 					<li><a href="typo">关于我们</a></li>
 					<li><a href="contact">联系我们</a></li>
 					<li><a href="task">任务</a></li>
@@ -109,65 +128,91 @@
 				<div class="banner-text">
 					<h4>计算机辅助设计与视觉计算</h4><br>
 					<h2>实验室</h2><br>
-					<p>Welcome to join us </p>
 				</div>
-				<p class="banner-text1">这里有多年工作经验的导师，有身经百战的师哥师姐，带你进入代码的世界!</p>
 			</div>
 		</div>
 
 
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
-
-					</div>
-					<!-- start search-->
-					<ul class="social-ic">
+ <!-- start search-->
+ <ul class="social-ic">
 						<li><a href="#"><i></i></a></li>
 						<li><a href="#"><i class="ic"></i></a></li>
 						<li><a href="#"><i class="ic1"></i></a></li>
 						<li><a href="#"><i class="ic2"></i></a></li>
 					</ul>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-</div> 
 
-	<div class="content">
-	<div class="container">
-	
-					<div class="content-mid">
-						<div class="col-md-4 content-top1">
-						<div class=" content-top2">
-							<h4>Design Thinking</h4>
-							<h6> There are many variations</h6>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-						</div>
-						</div>
-						<div class="col-md-4 content-top1">
-						<div class=" content-top2">
-							<h4>Book Library </h4>
-							<h6> There are many variations</h6>
-							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
-						</div>
-						</div>
-						<div class="col-md-4 content-mid-1">
-							<div class="port effect-1">
-								<div class="image-box">
-									<img src="../images/a11.jpg" alt="" class="img-responsive">
-								</div>
-								<div class="text-desc text-ed">
-									<h6>Education</h6>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor .</p>	
-								</div>
-							</div>
-						</div>
-					<div class="clearfix"></div>
-					</div>
-			</div>
-		</div>
-	
-	<!---->
+ <!--news-->
+ <div id="news_container">
+	 <div class="news_head">
+		 <h3>发现新鲜事</h3>
+	 </div>
+   <div id="container" class="news_pic" style="margin-left: 60px;-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing:content-box;">
+	   <div id="example">
+		 <div id="slides">
+			 <div class="slides_container">
+				 <div>
+					 <img src="images/slide-1.jpg" width="570" height="270" alt="Slide 1"></a>
+					 <div class="caption" style="bottom:0">
+						 <p>Happy Bokeh Thursday!</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-2.jpg" width="570" height="270" alt="Slide 2"></a>
+					 <div class="caption">
+						 <p>Taxi</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-3.jpg" width="570" height="270" alt="Slide 3"></a>
+					 <div class="caption">
+						 <p>Happy Bokeh raining Day</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-4.jpg" width="570" height="270" alt="Slide 4"></a>
+					 <div class="caption">
+						 <p>We Eat Light</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-5.jpg" width="570" height="270" alt="Slide 5"></a>
+					 <div class="caption">
+						 <p>&ldquo;I must go down to the sea again, to the lonely sea and the sky...&rdquo;</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-6.jpg" width="570" height="270" alt="Slide 6"></a>
+					 <div class="caption">
+						 <p>mobanwang.com</p>
+					 </div>
+				 </div>
+				 <div>
+					 <img src="images/slide-7.jpg" width="570" height="270" alt="Slide 7"></a>
+					 <div class="caption">
+						 <p>Save my love for loneliness</p>
+					 </div>
+				 </div>
+			 </div>
+			 <a href="#" class="prev"><img src="images/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+			 <a href="#" class="next"><img src="images/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+		 </div>
+	 </div>
+   </div>
+	 <div class="news_article">
+		 <div class="news_article_left">
+			 <ol>
+				 <a href="#" class="1"><li>习近平访问美国</li></a>
+				 <a href="#" class="2"><li>习近平访问英国</li></a>
+				 <a href="#" class="3"><li>习近平访问德国</li></a>
+				 <a href="#" class="4"><li>习近平访问德国</li></a>
+				 <a href="#" class="5"><li>习近平访问德国</li></a>
+			 </ol>
+		 </div>
+	 </div>
+ </div>
+ <!--//news-->
 	<div class="services">
 		<div class="container">
 		<div class="service-head">
@@ -216,10 +261,6 @@
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-		
-			</div>
-			<div class="col-md-5 service-mid">
-				<img src="../images/co.png" alt="" class="img-responsive">
 			</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -228,16 +269,16 @@
 
 <div class="test">
 		<div class="container">
-		<h3>Testimonials</h3>
+		<h3>导师</h3>
 			<div  class=" test-grid-1" >
 				<div class="col-md-6 test-wrapper">
 					<img src="../images/te.jpg" alt="" class="img-responsive">
 					<div class="test-grid">
 					<div class="test-gr">
-						<h4>Andery</h4>
-						<span>Ceo</span>
+						<h4>王吉华</h4>
+						<span>科研导师</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+						<p>啊阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿.</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -245,10 +286,10 @@
 					<img src="../images/te1.jpg" alt="" class="img-responsive">
 					<div class="test-grid">
 					<div class="test-gr">
-						<h4>Hailey</h4>
-						<span>Principal </span>
+						<h4>闫伟</h4>
+						<span>科研导师 </span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+						<p>啊阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿.</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -260,10 +301,10 @@
 					<img src="../images/te2.jpg" alt="" class="img-responsive">
 					<div class="test-grid">
 					<div class="test-gr">
-						<h4>Quincy</h4>
-						<span>Manager</span>
+						<h4>刘一良</h4>
+						<span>嗯嗯呢</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>	
+						<p>啊阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿.</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -271,10 +312,10 @@
 					<img src="../images/te3.jpg" alt="" class="img-responsive">
 					<div class="test-grid">
 					<div class="test-gr">
-						<h4>Barb</h4>
-						<span>professor</span>
+						<h4>某某某</h4>
+						<span>嗯呢阿</span>
 						</div>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+						<p>啊阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿阿.</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>

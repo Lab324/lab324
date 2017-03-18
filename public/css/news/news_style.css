@@ -1,0 +1,117 @@
+/*
+	Resets defualt browser settings
+	reset.css
+*/
+ol,ul { list-style:none; }
+#news_container{
+    background:white;
+    width: 100%;
+    min-height: 750px;
+    display: block;
+    padding: 6em 0 0em;
+
+}
+.news_head h3{
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-align: center;
+    margin: 0 0 0.3em;
+}
+.news_head h3:after{
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    vertical-align: middle;
+    margin-left: 1%;
+    content:"";
+}
+
+.news_pic {
+    font:normal 62.5%/1.5 Helvetica, Arial, sans-serif;
+    letter-spacing:0;
+    color:#434343;
+    background:#efefef url(../../images/background.png) repeat top center;
+    padding:20px 0;
+    position:relative;
+    text-shadow:0 1px 0 rgba(255,255,255,.8);
+    -webkit-font-smoothing: subpixel-antialiased;
+
+}
+
+#container {
+    width:580px;
+    padding:10px;
+    margin:0 auto;
+    position:relative;
+    z-index:0;
+}
+
+#example {
+    width:600px;
+    height:350px;
+    position:relative;
+    -webkit-box-sizing: content-box;!important;
+    -moz-box-sizing: content-box;!important;
+    box-sizing: content-box;!important;
+
+}
+
+#ribbon {
+    position:absolute;
+    top:-3px;
+    left:-15px;
+    z-index:500;
+}
+#slides {
+    position:absolute;
+    top:15px;
+    left:4px;
+    z-index:100;
+}
+
+#slides .next,#slides .prev {
+    position:absolute;
+    top:107px;
+    left:-39px;
+    width:24px;
+    height:43px;
+    display:block;
+    z-index:101;
+}
+
+.slides_container {
+    width:570px;
+    height:270px;
+    overflow:hidden;
+    position:relative;
+}
+
+#slides .next {
+    left:585px;
+}
+
+.caption {
+    position:absolute;
+    bottom:-35px;
+    height:30px;
+    padding:5px 20px 0 20px;
+    background:#000;
+    background:rgba(0,0,0,.5);
+    width:540px;
+    font-size:1.3em;
+    line-height:1.33;
+    color:#fff;
+    border-top:1px solid #000;
+    text-shadow:none;
+}
+.news_article_left{
+    margin-top: 10px;
+    margin-left: 60px;
+    font-family: "Adobe Caslon Pro";
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    color: black;
+}
