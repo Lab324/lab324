@@ -4873,12 +4873,18 @@ a.badge:focus {
 .jumbotron > hr {
   border-top-color: #d5d5d5;
 }
+.container-task{
+  border-radius: 6px;
+  max-width: 100%;
+}
 .container .jumbotron,
 .container-fluid .jumbotron {
   border-radius: 6px;
 }
 .jumbotron .container {
   max-width: 100%;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -6287,6 +6293,13 @@ button.close {
   .carousel-indicators {
     bottom: 20px;
   }
+}
+.row-task{
+  display: table;
+  content: " ";
+  clear: both;
+  text-transform:lowercase;
+
 }
 .clearfix:before,
 .clearfix:after,

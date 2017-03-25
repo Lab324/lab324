@@ -22,7 +22,22 @@ body a{
 h1,h2,h3,h4,h5,h6,label,p{
 	margin:0;	
 }
+.table{
+ font-size: inherit;
+}
+.title-task{
+    text-align:center;
+    font-family: 幼圆;
+}
+.task-a2{
+    padding: 20px 10px 10px 20px;
+}
+.task-a{
 
+    font-size:20px;
+    color: #FFFFFF;
+    text-decoration:none;
+}
 .logo h1{
 	font-size:4em;
 	font-family: 'Montserrat', sans-serif;
@@ -35,6 +50,15 @@ h1,h2,h3,h4,h5,h6,label,p{
 	color:#00959f;
 }
 /*--banner--*/
+
+
+.header-task{
+
+    width:100%;
+    min-height:750px;
+    display:block;
+    position:relative;
+}
 .header{
 	background:url(../images/1.jpg) no-repeat right;
 	width:100%;
