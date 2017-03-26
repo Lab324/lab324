@@ -4798,6 +4798,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     position: relative;
 }
+.hr{
+    opacity: 0;
+}
 .ace-wrapper-table {
    padding-top: 50px;
     padding-left: 50px;
