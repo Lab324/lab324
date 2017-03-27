@@ -57,4 +57,7 @@ router.get('/contact', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'about' });
 });
+router.get('/meeting', function(req, res, next) {
+    res.render('meeting', { title: 'meeting' });
+});
 module.exports = router;
