@@ -106,9 +106,9 @@ ol,ul { list-style:none; }
     border-top:1px solid #000;
     text-shadow:none;
 }
-.news_article_left{
+.news_article_right{
     margin-top: 10px;
-    margin-left: 60px;
+    margin-right: 30px;
     font-family: "Adobe Caslon Pro";
     font-size: 30px;
     letter-spacing: 3px;
