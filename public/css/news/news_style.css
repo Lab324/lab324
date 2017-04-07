@@ -116,6 +116,8 @@
 }
 .news_article_head{
     color: #000;
+    font-family: "微软雅黑 Light";
+    font-weight: 300;
 }
 .news_article_concrete{
     font-size: 15px;
