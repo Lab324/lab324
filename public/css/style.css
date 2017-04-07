@@ -393,6 +393,12 @@ h5{
 	width:50%;
 	margin: 2em auto 0;
 }
+banner-text h1{
+    font-size: 3em;
+    background-color: #fff;
+    font-family: Arial;
+
+}
 /* Sweep To Bottom */
 .hvr-sweep-to-bottom {
   display: inline-block;
@@ -1712,8 +1718,8 @@ ul.nav.nav-pills {
 }
 @media(max-width:767px){
 .banner-text h2 {
-    font-size: 4em;
-}
+     font-size: 4em;
+ }
 .banner-text p:after {
     width: 104px;
 }
