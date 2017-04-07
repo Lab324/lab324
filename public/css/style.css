@@ -2160,6 +2160,8 @@ div#bs-example-navbar-collapse-1 {
 
     .ser-top h5 {
         font-size: 1.3em;
+        position: fixed;
+        margin-top: 20px;
     }
 
     .ser-top p {
